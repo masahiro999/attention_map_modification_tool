@@ -1,0 +1,2 @@
+# attention_map_modification_tool
+生成したAttention mapを任意に修正できます。
