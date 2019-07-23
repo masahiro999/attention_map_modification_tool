@@ -1,5 +1,5 @@
 # Attention map modification tool 
-Writer : [Masahiro Mitsuhara](https://github.com/Masahiro-Mitsuhara)<br>
+Writer : [Masahiro Mitsuhara](https://github.com/masahiro999)<br>
 モデルを評価して生成したAttention mapを任意に修正することができます．
 
 ## 動作環境
