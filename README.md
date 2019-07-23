@@ -22,15 +22,14 @@ pip3 install torchvision
 
 ## 実行方法
 GPUを使用して，学習済みモデルからAttention mapの生成を行います．<br>
-次に，Attention mapの修正ツールが起動する．<br>
+次に，Attention mapの修正ツールが起動します．<br>
 実行方法がGPUが使用可能かどうかで変わります．<br>
 GPUが使用可能な場合は学習済みのモデルを評価し，任意の画像のAttention mapを生成することができます．<br>
 GPUを使用する環境がない場合は，修正ツールのみを実行してください．<br>
 サンプルの画像が用意してあるので、修正ツールをお試し頂くことができます．<br>
-GPUを使用して，学習済みモデルからAttention mapの生成を行います．<br>
-次に，Attention mapの修正ツールが起動する．<br>
+
 下記のコマンドを実行してください．<br>
-※モデルを評価する環境がない場合は，修正ツールのみを実行する．
+※モデルを評価する環境がない場合は，修正ツールのみを実行してください．
 - Attention mapの生成と修正ツールの起動 
 > python3 main.py -a resnet152 --data data/ -c checkpoints/results --gpu-id 0 --evaluate --resume checkpoints/results/model_best.pth.tar
 
