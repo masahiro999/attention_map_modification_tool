@@ -1,0 +1,144 @@
+<!doctype html>
+<style>
+  body {
+    background-color: #000;
+    background-image: url(static/back.jpg);
+    font-family: arial;
+  }
+</style>
+
+<html lang="ja">
+<img src={{url_for('static', filename='head.jpg')}}" alt="head">
+<font color="white">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="最新技術と自然との調和を目指す">
+<meta name="viewport" content="width=device-width">
+<title>Modification result of attention map</title>
+<!-link rel="stylesheet" media="all" href="static/css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script src="static/js/main.js"></script>
+</head>
+
+<body>
+
+<nav id="mainnav">
+	<p id="menuWrap"><a id="menu"><span id="menuBtn"></span></a></p>
+	<div class="panel">
+		<ul>
+			<li><a href="#header"><font color="yellow">TOP</font></a></li>
+			<li><a href="#sec01"><font color="yellow">Modification Result</font></a></li>
+			<li><a href="#sec04"><font color="yellow">Details of the Experiment</font></a></li>
+			<li><a href="#sec05"><font color="yellow">PROFILE</font></a></li>
+		</ul>
+	</div>
+</nav>
+<header id="header">
+	<div id="slogan">
+		<h1>Visual Explanation in Deep Learning</h1>
+		<h2>Understanding the Network with Attention map</h2>
+	</div>
+</header>
+
+<!-- VISION -->
+<section id="sec01">
+	<div class="vision">
+To interpret the deep learning in computer vision, visual explanation that visualizes the attention region in the inference process.<br>
+Visual explanation can be categorized into two approaches: gradient-based, which outputs an attention map using gradients, and response-based, which outputs an attention map using the response of the convolutional layer.<br>
+        <br>
+	</div>
+	<header>
+		<h2>Modification Result of Attention map</h2>
+	</header>
+        <div class="vision">
+To modify as many attention maps as possible, we created a tool that can modify attention maps.<br>
+This tool can add and remove an attention region simply by dragging the mouse.<br>
+These maps are modified so that an object or characteristic region with respect to a specific category is highlighted.<br>
+        <br>
+	</div>
+</section>
+<!-- // VISION -->
+
+<!-- MESSAGE -->
+<section id="sec02">
+</section>
+<!-- // MESSAGE -->
+
+<!-- SERVICE -->
+<section id="sec03">
+	<div class="inner">
+		<ul class="col3">
+			<li>
+				<h2>Original Image</h2>
+				<img src="{{url_for('static', filename='val_tmp.png')}}" alt="tmp"/>
+                                <br>
+				<p></p>
+			</li>
+			<li>
+				<h2>Attention map before Modification</h2>
+				<img src="{{url_for('static', filename='org_tmp.png')}}" alt="tmp"/>
+                                <br>
+				<p></p>
+			</li>
+			<li>
+				<h2>Modified Attention map</h2>
+				<img src="{{url_for('static', filename='tmp.png')}}" alt="tmp"/>
+                                <br>
+				<p></p>
+			</li>
+		</ul>
+	</div>
+</section>
+<!-- // SERVICE -->
+
+<!-- STORY --> 
+<section id="sec04">
+	<div class="inner">
+		<ul class="col2">
+			<li>
+				<h2>Details of the Experiment</h2>
+				<p>We use validation samples from the ImageNet dataset.<br>
+Specifically, we replace the attention map during inference with the modified attention map and then check the changes of the classification results.<br>
+As a network model, we use ResNet, which consists of 152 layers, along with the ABN (ResNet152+ABN).<br>
+ResNet152+ABN is trained with 1,200k training samples from the ImageNet dataset.<br>
+Then, we select samples from the validation samples and modify these attention maps.</p>
+<br>
+</section>
+<!-- // STORY -->
+
+<!-- PROFILE -->
+<section id="sec05">
+	<header>
+		<h2>PROFILE</h2>
+	</header>
+	<div class="inner">
+		<ul class="col2">
+			<li>
+				<dl>
+					<dt>中部大学(Chubu University)</dt>
+					<dt>所属</dt>
+					<dd>工学部ロボット理工学専攻</dd>
+					<dt>住所</dt>
+					<dd>愛知県春日井市松本町１２００</dd>
+					<dt>e-mail</dt>
+					<dd>tr19010-7523@sti.chubu.ac.jp</dd>
+				</dl>
+			</li>
+			<li>
+				<div id="map">
+					<!-- GOOGLE MAP -->
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3257.285621140283!2d137.01149995033262!3d35.27402428019445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60036dc9ee7e1001%3A0xab46787b60af2116!2z44CSNDg3LTAwMjcg5oSb55-l55yM5pil5pel5LqV5biC5p2-5pys55S677yR77yS77yQ77yQ!5e0!3m2!1sja!2sjp!4v1561108099234!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<!-- // GOOGLE MAP -->
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>
+<!-- // PROFILE -->
+
+<footer id="footer">
+	Copyright(c) 2019 Sample Inc. All Rights Reserved. Design by <a href="http://f-tpl.com" target="_blank"><font color="yellow">http://f-tpl.com</font></a><!-- ←クレジット表記を外す場合はシリアルキーが必要です http://f-tpl.com/credit/ -->
+</footer>
+</body>
+</font>
+</html>
