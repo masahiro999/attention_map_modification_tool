@@ -56,5 +56,5 @@ Attention mapの修正は，マウス操作とキーボード操作で行いま�
 - ウェブ上で編集結果を確認 : cキー
 
 ### Attention mapの修正例
-![overview image](https://github.com/Masahiro-Mitsuhara/attention_map_modification_tool/blob/master/example.jpg)
+![overview image](https://github.com/masahiro999/attention_map_modification_tool/blob/master/example.jpg)
 
